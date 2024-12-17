@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences - Fared</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #FAEDCE;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: #3E2723;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 40px;
+            animation: slideInDown 1s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #FFD700;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .experience-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            opacity: 0;
+            animation: fadeInUp 1.2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .experience-item img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .three-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .three-images .image-item {
+            width: 30%;
+        }
+
+        .three-images .image-item img {
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Fared's Experiences</h2>
+
+    <div class="experience-item">
+        <div class="three-images">
+            <div class="image-item">
+                <img src="experiences/flexx.jpeg" alt="Working at Flex Factory">
+            </div>
+            <div class="image-item">
+                <img src="experiences/flexing.jpeg" alt="Part-time Sales Associate at ABC Store">
+            </div>
+            <div class="image-item">
+                <img src="experiences/penat.jpeg" alt="Volunteer Work at Community Center">
+            </div>
+        </div>
+        <h3>Working at Flex Factory</h3>
+        <p class="date">May 2022 - July 2022</p>
+        <p class="description">My time at Flex Factory was a sweet-bitter experience. Waking up at 5 a.m. every day was challenging, but it taught me discipline and time management. The fast-paced environment helped me improve my teamwork and problem-solving skills, despite the physical and mental demands. Overall, it was a valuable learning experience that strengthened my work ethic.</p>
+    </div>
+
+    <div class="experience-item">
+        <div class="three-images">
+            <div class="image-item">
+                <img src="experiences/card.jpeg" alt="Part-time Sales Associate at ABC Store">
+            </div>
+            <div class="image-item">
+                <img src="experiences/intern.jpeg" alt="Community Center Image 1">
+            </div>
+            <div class="image-item">
+                <img src="experiences/call.jpeg" alt="Community Center Image 2">
+            </div>
+        </div>
+        <h3>Internship at JTK Kulim</h3>
+        <p class="date">July 2024 - September 2024</p>
+        <p class="description">During my internship at JTK Kulim, I assisted with various administrative tasks, including managing documentation and supporting team projects. I gained hands-on experience in office operations and learned how to effectively coordinate tasks within a professional environment. This internship helped me develop communication and organizational skills, which were essential in understanding the working dynamics of a government agency.</p>
+    </div>
+
+    <div class="experience-item">
+        <div class="three-images">
+            <div class="image-item">
+                <img src="experiences/explore.jpeg" alt="Community Center Image 1">
+            </div>
+            <div class="image-item">
+                <img src="experiences/fasi.jpeg" alt="Community Center Image 2">
+            </div>
+            <div class="image-item">
+                <img src="experiences/sulamm.jpeg" alt="Community Center Image 3">
+            </div>
+        </div>
+        <h3>Social Outreach Program at SMKA Yan</h3>
+        <p class="date">14 December 2024</p>
+        <p class="description">As a university student, I participated in a social outreach program at SMKA Yan, where I helped organize events and activities for the students. This experience allowed me to contribute to the community by promoting education and personal development. It also strengthened my leadership and teamwork skills, as I collaborated with other volunteers to create a positive impact on the students’ lives.</p>
+    </div>
+</div>
+</body>
+</html>
